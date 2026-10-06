@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SultanateStays</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />
+</head>
+<body class="flex min-h-screen flex-col bg-slate-50 text-slate-900 antialiased">
+    @{
+        var activeController = ViewContext.RouteData.Values["controller"]?.ToString();
+        string NavClass(string controller) => activeController == controller
+        ? "text-indigo-900 font-semibold"
+        : "text-slate-600 hover:text-slate-900";
+    }
+
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+            <a class="flex items-center gap-3" asp-controller="Home" asp-action="Index">
+                <img src="~/img/logo-mark.png" alt="" aria-hidden="true" class="h-10 w-10 object-contain" />
+                <span class="text-lg font-bold tracking-tight text-indigo-900">SultanateStays</span>
+            </a>
+
+            <nav class="flex items-center gap-6 text-sm">
+                <a class="@NavClass("Home")" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                <a class="@NavClass("Hotels")" asp-controller="Hotels" asp-action="Search">Oteller</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-10">
+        @RenderBody()
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+            <img src="~/img/logo.png" alt="Sultanate Stays logosu" class="h-12 w-auto object-contain" />
+            <span>&copy; 2026 SultanateStays. Tüm hakları saklıdır.</span>
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

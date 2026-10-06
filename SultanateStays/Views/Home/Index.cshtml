@@ -1,0 +1,108 @@
+@model SultanateStays.Models.HotelSearchQuery
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<section class="overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-700 via-indigo-800 to-slate-900 px-6 py-12 text-white shadow-xl sm:px-12">
+    <p class="text-sm font-semibold uppercase tracking-wider text-indigo-200">Saray otelleri</p>
+    <h1 class="mt-3 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
+        Saray otellerini tarih ve fiyata göre arayın
+    </h1>
+    <p class="mt-4 max-w-xl text-lg text-indigo-100">
+        Şehri, tarihleri ve misafir sayısını girin; müsait otelleri toplam fiyatıyla karşılaştırın.
+    </p>
+
+    <form id="search-form" class="mt-10 grid gap-3 rounded-2xl bg-white p-4 text-slate-900 shadow-lg sm:p-5 md:grid-cols-12"
+          asp-controller="Hotels" asp-action="Search" method="get">
+
+        <label class="field md:col-span-3">
+            <span class="field-label">Şehir</span>
+            <input class="field-input" name="Destination" type="text" value="@Model.Destination" placeholder="İstanbul, Milano" required />
+        </label>
+
+        <label class="field md:col-span-2">
+            <span class="field-label">Giriş tarihi</span>
+            <input class="field-input" name="CheckIn" type="date" value="@Model.CheckIn.ToString("yyyy-MM-dd")" required />
+        </label>
+
+        <label class="field md:col-span-2">
+            <span class="field-label">Çıkış tarihi</span>
+            <input class="field-input" name="CheckOut" type="date" value="@Model.CheckOut.ToString("yyyy-MM-dd")" required />
+        </label>
+
+        <div class="grid grid-cols-3 gap-3 md:col-span-3">
+            <label class="field">
+                <span class="field-label">Yetişkin</span>
+                <select class="field-input" name="Adults">
+                    @for (var i = 1; i <= 10; i++)
+                    {
+                        <option value="@i" selected="@(i == Model.Adults)">@i</option>
+                    }
+                </select>
+            </label>
+
+            <label class="field">
+                <span class="field-label">Çocuk</span>
+                <select class="field-input" name="Children">
+                    @for (var i = 0; i <= 6; i++)
+                    {
+                        <option value="@i" selected="@(i == Model.Children)">@i</option>
+                    }
+                </select>
+            </label>
+
+            <label class="field">
+                <span class="field-label">Oda</span>
+                <select class="field-input" name="Rooms">
+                    @for (var i = 1; i <= 5; i++)
+                    {
+                        <option value="@i" selected="@(i == Model.Rooms)">@i</option>
+                    }
+                </select>
+            </label>
+        </div>
+
+        <label class="field md:col-span-2">
+            <span class="field-label">Para</span>
+            <select class="field-input" name="Currency">
+                @foreach (var currency in new[] { "EUR", "USD", "TRY" })
+                {
+                    <option value="@currency" selected="@(currency == Model.Currency)">@currency</option>
+                }
+            </select>
+        </label>
+
+        <button type="submit" data-search-submit
+                class="flex items-center justify-center rounded-xl bg-indigo-700 px-6 py-4 font-semibold text-white shadow transition-colors hover:bg-indigo-800 disabled:opacity-70 md:col-span-12">
+            <span>Otelleri ara</span>
+        </button>
+
+        <p class="text-xs text-slate-500 md:col-span-12">
+            Giriş tarihi bugünden sonra olmalı; çıkış tarihi giriş tarihinden sonra olmalıdır.
+        </p>
+    </form>
+</section>
+
+<section class="mt-12 grid gap-6 md:grid-cols-3">
+    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-700">1</span>
+        <h2 class="mt-4 text-lg font-semibold">Şehri seçin</h2>
+        <p class="mt-2 text-sm text-slate-600">İstanbul veya Milano gibi bir destinasyon yazın.</p>
+    </div>
+
+    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-700">2</span>
+        <h2 class="mt-4 text-lg font-semibold">Tarih ve misafirleri girin</h2>
+        <p class="mt-2 text-sm text-slate-600">Giriş ve çıkış tarihini, yetişkin, çocuk ve oda sayısını belirleyin.</p>
+    </div>
+
+    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-700">3</span>
+        <h2 class="mt-4 text-lg font-semibold">Fiyatları karşılaştırın</h2>
+        <p class="mt-2 text-sm text-slate-600">Her otelin toplam fiyatını seçtiğiniz para biriminde görün.</p>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/search-form.js" asp-append-version="true"></script>
+}

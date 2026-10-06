@@ -1,0 +1,1404 @@
+﻿{
+  "status": true,
+  "message": "Success",
+  "timestamp": 1791226442244,
+  "data": {
+    "hotels": [
+      {
+        "hotel_id": 11311744,
+        "accessibilityLabel": "Navigli's Nest - Close to the metro and train.\n3 out of 5 for property rating.\n9.6 Exceptional 12 reviews.\n‎Navigli‬ • ‎1.7 km from downtown‬.\nMobile-only price.\n Private room : 1 bed • 2 bathrooms.\nPrice for 3 nights, 2 adults.\nOriginal price 420 EUR. Current price 356 EUR..\n+89 EUR taxes and charges.\nWe have 1 left at this price.",
+        "property": {
+          "reviewCount": 12,
+          "reviewScore": 9.6,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+          },
+          "checkout": {
+            "untilTime": "10:00",
+            "fromTime": "00:00"
+          },
+          "longitude": 9.1758474,
+          "isFirstPage": true,
+          "blockIds": [
+            "1131174402_385772632_2_0_0"
+          ],
+          "latitude": 45.4517936,
+          "rankingPosition": 0,
+          "position": 0,
+          "recommendedUnitsConfigurationLabel": "<b>Private room</b>: 1 bed • 2 bathrooms",
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "reviewScoreWord": "Exceptional",
+          "name": "Navigli's Nest - Close to the metro and train",
+          "propertyClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 517221020,
+          "qualityClass": 3,
+          "id": 11311744,
+          "accuratePropertyClass": 0,
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/517221020.jpg?k=88dac00a18685a1657f8122800a6a709423b320a985e220ac339c1d70226a3fc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/517221020.jpg?k=88dac00a18685a1657f8122800a6a709423b320a985e220ac339c1d70226a3fc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/517221020.jpg?k=88dac00a18685a1657f8122800a6a709423b320a985e220ac339c1d70226a3fc&o="
+          ],
+          "optOutFromGalleryChanges": 0,
+          "priceBreakdown": {
+            "grossPrice": {
+              "amountRounded": "€ 356",
+              "value": 356.4789,
+              "currency": "EUR"
+            },
+            "strikethroughPrice": {
+              "value": 420.4546,
+              "currency": "EUR",
+              "amountRounded": "€ 420"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 88.8111000000001
+            },
+            "benefitBadges": [
+              {
+                "variant": "constructive",
+                "explanation": "Mobile-only price",
+                "identifier": "Mobile Rate",
+                "text": "Mobile-only price"
+              }
+            ],
+            "taxExceptions": []
+          },
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23"
+        }
+      },
+      {
+        "hotel_id": 80754,
+        "accessibilityLabel": "UNA Hotels Galles Milano.\n4 out of 5 stars.\nThis is a Preferred property.\n8.3 Very Good 5935 reviews.\n‎Central Station‬ • ‎2.5 km from downtown‬\n‎Sustainability certification‬.\n Hotel room : 2 beds.\nPrice for 3 nights, 2 adults.\n643 EUR.\n+124 EUR taxes and charges.",
+        "property": {
+          "longitude": 9.21173840761185,
+          "isPreferred": true,
+          "isFirstPage": true,
+          "isTPI": true,
+          "blockIds": [
+            "8075486_0_2_0_0"
+          ],
+          "latitude": 45.480388769715,
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "12:00"
+          },
+          "reviewCount": 5935,
+          "reviewScore": 8.3,
+          "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "00:00"
+          },
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/468587792.jpg?k=0b8361b35aa5cf56b67f17945ff4b017281938a1a6e9e83e47e1d403265cc94d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/468587792.jpg?k=0b8361b35aa5cf56b67f17945ff4b017281938a1a6e9e83e47e1d403265cc94d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/468587792.jpg?k=0b8361b35aa5cf56b67f17945ff4b017281938a1a6e9e83e47e1d403265cc94d&o="
+          ],
+          "id": 80754,
+          "accuratePropertyClass": 4,
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "grossPrice": {
+              "currency": "EUR",
+              "value": 642.6722210554,
+              "amountRounded": "€ 643"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 123.9205600134
+            },
+            "benefitBadges": []
+          },
+          "optOutFromGalleryChanges": 0,
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 2 beds",
+          "rankingPosition": 1,
+          "position": 1,
+          "countryCode": "it",
+          "mainPhotoId": 468587792,
+          "qualityClass": 0,
+          "reviewScoreWord": "Very Good",
+          "propertyClass": 4,
+          "name": "UNA Hotels Galles Milano"
+        }
+      },
+      {
+        "hotel_id": 177335,
+        "accessibilityLabel": "Hotel Arno.\n1 out of 5 stars.\nThis is a Preferred property.\n7.0 Good 5 reviews.\n‎Central Station‬ • ‎2 km from downtown‬.\nMobile-only price.\n Hotel room : 3 beds.\nPrice for 3 nights, 2 adults.\nOriginal price 334 EUR. Current price 273 EUR..\n+48 EUR taxes and charges.\nWe have 2 left at this price.",
+        "property": {
+          "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+          },
+          "reviewScore": 7,
+          "checkin": {
+            "untilTime": "00:30",
+            "fromTime": "14:00"
+          },
+          "reviewCount": 5,
+          "blockIds": [
+            "17733502_90946584_2_0_0"
+          ],
+          "latitude": 45.4793403032437,
+          "isFirstPage": true,
+          "longitude": 9.2034986615181,
+          "isPreferred": true,
+          "qualityClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 922354740,
+          "reviewScoreWord": "Good",
+          "name": "Hotel Arno",
+          "propertyClass": 1,
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 3 beds",
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "rankingPosition": 2,
+          "position": 2,
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "optOutFromGalleryChanges": 0,
+          "priceBreakdown": {
+            "benefitBadges": [
+              {
+                "variant": "constructive",
+                "explanation": "Mobile-only price",
+                "identifier": "Mobile Rate",
+                "text": "Mobile-only price"
+              }
+            ],
+            "strikethroughPrice": {
+              "amountRounded": "€ 334",
+              "currency": "EUR",
+              "value": 333.636363636364
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 48.0273000000001
+            },
+            "grossPrice": {
+              "amountRounded": "€ 273",
+              "currency": "EUR",
+              "value": 273.2527
+            },
+            "taxExceptions": []
+          },
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/922354740.jpg?k=18c9907904f70fd3358f0867987f4baa5035c9ad8aab6f6c50a7d5e4818c43f9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/922354740.jpg?k=18c9907904f70fd3358f0867987f4baa5035c9ad8aab6f6c50a7d5e4818c43f9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/922354740.jpg?k=18c9907904f70fd3358f0867987f4baa5035c9ad8aab6f6c50a7d5e4818c43f9&o="
+          ],
+          "id": 177335,
+          "accuratePropertyClass": 1
+        }
+      },
+      {
+        "hotel_id": 17342924,
+        "accessibilityLabel": "Vespri 64.\n‎3.6 km from downtown‬.\nNew to Booking.com.\n Entire apartment – 48 m² : 2 beds • 1 bedroom • 1 living room • 1 bathroom.\nPrice for 3 nights, 2 adults.\nOriginal price 337 EUR. Current price 311 EUR..\n+86 EUR taxes and charges.\nWe have 1 left at this price.",
+        "property": {
+          "checkout": {
+            "untilTime": "10:00",
+            "fromTime": "04:00"
+          },
+          "reviewCount": 0,
+          "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "23:30"
+          },
+          "reviewScore": 0,
+          "latitude": 45.4520584,
+          "blockIds": [
+            "1734292401_445011945_2_0_0"
+          ],
+          "longitude": 9.1465471,
+          "isFirstPage": true,
+          "mainPhotoId": 922755221,
+          "countryCode": "it",
+          "qualityClass": 0,
+          "name": "Vespri 64",
+          "propertyClass": 0,
+          "reviewScoreWord": "",
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Entire apartment – 48 m²</b>: 2 beds • 1 bedroom • 1 living room • 1 bathroom",
+          "currency": "EUR",
+          "position": 3,
+          "rankingPosition": 3,
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "optOutFromGalleryChanges": 0,
+          "priceBreakdown": {
+            "strikethroughPrice": {
+              "amountRounded": "€ 337",
+              "currency": "EUR",
+              "value": 336.6362
+            },
+            "benefitBadges": [],
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 85.6638000000001
+            },
+            "grossPrice": {
+              "value": 310.8362,
+              "currency": "EUR",
+              "amountRounded": "€ 311"
+            },
+            "taxExceptions": []
+          },
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/922755221.jpg?k=402a2a2fd1c35edd6321fc5a865e24b0fb6872763714a6483ddbf7d0add4c09e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/922755221.jpg?k=402a2a2fd1c35edd6321fc5a865e24b0fb6872763714a6483ddbf7d0add4c09e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/922755221.jpg?k=402a2a2fd1c35edd6321fc5a865e24b0fb6872763714a6483ddbf7d0add4c09e&o="
+          ],
+          "ufi": -121726,
+          "accuratePropertyClass": 0,
+          "id": 17342924
+        }
+      },
+      {
+        "hotel_id": 187507,
+        "accessibilityLabel": "Milan Suite Hotel.\n4 out of 5 stars.\nThis is a Preferred property.\n8.7 Excellent 1839 reviews.\n‎5.4 km from downtown‬\n‎Sustainability certification‬.\n Private suite : 1 bed.\nPrice for 3 nights, 2 adults.\nOriginal price 503 EUR. Current price 458 EUR..\n+110 EUR taxes and charges.\nWe have 1 left at this price.",
+        "property": {
+          "name": "Milan Suite Hotel",
+          "propertyClass": 4,
+          "reviewScoreWord": "Excellent",
+          "mainPhotoId": 699672946,
+          "countryCode": "it",
+          "qualityClass": 0,
+          "position": 4,
+          "rankingPosition": 4,
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "recommendedUnitsConfigurationLabel": "<b>Private suite</b>: 1 bed",
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "excludedPrice": {
+              "value": 110.31,
+              "currency": "EUR"
+            },
+            "strikethroughPrice": {
+              "amountRounded": "€ 503",
+              "value": 503.1,
+              "currency": "EUR"
+            },
+            "benefitBadges": [],
+            "grossPrice": {
+              "amountRounded": "€ 458",
+              "value": 457.82,
+              "currency": "EUR"
+            }
+          },
+          "optOutFromGalleryChanges": 1,
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "accuratePropertyClass": 4,
+          "id": 187507,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/699672946.jpg?k=b8d5f83777dd57b7011f5fe096115ab7ae3dd17bb67d9218e8c512223d2a38dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/699672946.jpg?k=b8d5f83777dd57b7011f5fe096115ab7ae3dd17bb67d9218e8c512223d2a38dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/699672946.jpg?k=b8d5f83777dd57b7011f5fe096115ab7ae3dd17bb67d9218e8c512223d2a38dc&o="
+          ],
+          "ufi": -121726,
+          "reviewCount": 1839,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "14:00"
+          },
+          "reviewScore": 8.7,
+          "checkout": {
+            "untilTime": "12:00",
+            "fromTime": "00:00"
+          },
+          "latitude": 45.5002222668011,
+          "blockIds": [
+            "18750709_91466320_2_0_0_1440369"
+          ],
+          "isPreferred": true,
+          "longitude": 9.14252132177353,
+          "isFirstPage": true
+        }
+      },
+      {
+        "hotel_id": 80353,
+        "accessibilityLabel": "BB Hotels Smarthotel Missori.\n4 out of 5 stars.\n8.4 Very Good 461 reviews.\n‎In downtown‬.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\n652 EUR.\n+125 EUR taxes and charges.\nFree cancellation.\nWe have 2 left at this price.",
+        "property": {
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/871054463.jpg?k=a7d6a08e75b93b14ff7084e4e89b1b988d2e8764da00828d0690a5fa818542c4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/871054463.jpg?k=a7d6a08e75b93b14ff7084e4e89b1b988d2e8764da00828d0690a5fa818542c4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/871054463.jpg?k=a7d6a08e75b93b14ff7084e4e89b1b988d2e8764da00828d0690a5fa818542c4&o="
+          ],
+          "id": 80353,
+          "accuratePropertyClass": 4,
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "optOutFromGalleryChanges": 0,
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "grossPrice": {
+              "amountRounded": "€ 652",
+              "value": 651.8181,
+              "currency": "EUR"
+            },
+            "benefitBadges": [],
+            "excludedPrice": {
+              "value": 125.1819,
+              "currency": "EUR"
+            }
+          },
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "rankingPosition": 5,
+          "position": 5,
+          "qualityClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 871054463,
+          "reviewScoreWord": "Very Good",
+          "propertyClass": 4,
+          "name": "BB Hotels Smarthotel Missori",
+          "isFirstPage": true,
+          "longitude": 9.18780505657196,
+          "blockIds": [
+            "8035304_433776719_2_0_0"
+          ],
+          "latitude": 45.4585728868238,
+          "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+          },
+          "reviewScore": 8.4,
+          "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "00:00"
+          },
+          "reviewCount": 461
+        }
+      },
+      {
+        "hotel_id": 17177164,
+        "accessibilityLabel": "Hotel Lume.\n3 out of 5 stars.\n8.5 Very Good 75 reviews.\n‎Distretto Viale Monza‬ • ‎4 km from downtown‬.\nMobile-only price.\n Hotel room : 2 beds.\nPrice for 3 nights, 2 adults.\nOriginal price 467 EUR. Current price 383 EUR..\n+84 EUR taxes and charges.\nWe have 4 left at this price.",
+        "property": {
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/918533788.jpg?k=db1195232f617c9ec12b63552fb7d51d143a8aec488a21496b152a6aeee32c42&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/918533788.jpg?k=db1195232f617c9ec12b63552fb7d51d143a8aec488a21496b152a6aeee32c42&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/918533788.jpg?k=db1195232f617c9ec12b63552fb7d51d143a8aec488a21496b152a6aeee32c42&o="
+          ],
+          "ufi": -121726,
+          "accuratePropertyClass": 3,
+          "id": 17177164,
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "priceBreakdown": {
+            "grossPrice": {
+              "currency": "EUR",
+              "value": 382.6955,
+              "amountRounded": "€ 383"
+            },
+            "benefitBadges": [
+              {
+                "identifier": "Mobile Rate",
+                "text": "Mobile-only price",
+                "explanation": "Mobile-only price",
+                "variant": "constructive"
+              }
+            ],
+            "strikethroughPrice": {
+              "currency": "EUR",
+              "value": 467.272727272727,
+              "amountRounded": "€ 467"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 84.0546000000001
+            },
+            "taxExceptions": []
+          },
+          "optOutFromGalleryChanges": 0,
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 2 beds",
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "position": 6,
+          "rankingPosition": 6,
+          "mainPhotoId": 918533788,
+          "countryCode": "it",
+          "qualityClass": 0,
+          "name": "Hotel Lume",
+          "propertyClass": 3,
+          "reviewScoreWord": "Very Good",
+          "longitude": 9.2228833,
+          "isFirstPage": true,
+          "latitude": 45.491475,
+          "blockIds": [
+            "1717716405_443461523_2_2_0"
+          ],
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "11:00"
+          },
+          "reviewCount": 75,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "14:00"
+          },
+          "reviewScore": 8.5
+        }
+      },
+      {
+        "hotel_id": 17096181,
+        "accessibilityLabel": "RELSTAY - Affori.\n3 out of 5 for property rating.\n9.5 Exceptional 39 reviews.\n‎5.2 km from downtown‬.\n Entire studio – 28 m² : 1 bed • 1 bedroom • 1 bathroom.\nPrice for 3 nights, 2 adults.\nOriginal price 267 EUR. Current price 246 EUR..\n+79 EUR taxes and charges.\nWe have 1 left at this price.",
+        "property": {
+          "rankingPosition": 7,
+          "position": 7,
+          "currency": "EUR",
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Entire studio – 28 m²</b>: 1 bed • 1 bedroom • 1 bathroom",
+          "reviewScoreWord": "Exceptional",
+          "name": "RELSTAY - Affori",
+          "propertyClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 918318680,
+          "qualityClass": 3,
+          "id": 17096181,
+          "accuratePropertyClass": 0,
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/918318680.jpg?k=b6784dfdcfc7c998f61c511b121588b813c0c3512fbe0935698257142d68cea9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/918318680.jpg?k=b6784dfdcfc7c998f61c511b121588b813c0c3512fbe0935698257142d68cea9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/918318680.jpg?k=b6784dfdcfc7c998f61c511b121588b813c0c3512fbe0935698257142d68cea9&o="
+          ],
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "grossPrice": {
+              "currency": "EUR",
+              "value": 246.3355,
+              "amountRounded": "€ 246"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 79.4546000000001
+            },
+            "strikethroughPrice": {
+              "currency": "EUR",
+              "value": 266.545454545455,
+              "amountRounded": "€ 267"
+            },
+            "benefitBadges": [],
+            "taxExceptions": []
+          },
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "reviewCount": 39,
+          "reviewScore": 9.5,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+          },
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "10:00"
+          },
+          "longitude": 9.1755667,
+          "isFirstPage": true,
+          "blockIds": [
+            "1709618103_442633272_2_0_0"
+          ],
+          "latitude": 45.5101679
+        }
+      },
+      {
+        "hotel_id": 9323859,
+        "accessibilityLabel": "Radisson Collection Hotel, Santa Sofia Milan.\n5 out of 5 stars.\nThis is a Preferred property.\n9.0 Wonderful 3590 reviews.\n‎In downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\nOriginal price 1503 EUR. Current price 1339 EUR..\n+206 EUR taxes and charges.",
+        "property": {
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "benefitBadges": [
+              {
+                "explanation": "Mobile-only price",
+                "identifier": "Mobile Rate",
+                "text": "Mobile-only price",
+                "variant": "constructive"
+              }
+            ],
+            "strikethroughPrice": {
+              "value": 1502.7273,
+              "currency": "EUR",
+              "amountRounded": "€ 1,503"
+            },
+            "excludedPrice": {
+              "value": 205.9137,
+              "currency": "EUR"
+            },
+            "grossPrice": {
+              "value": 1339.1363,
+              "currency": "EUR",
+              "amountRounded": "€ 1,339"
+            },
+            "taxExceptions": []
+          },
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "id": 9323859,
+          "accuratePropertyClass": 5,
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/543472005.jpg?k=99aae30ec57bf084d51ea54580ce93642dd163fc5d4293a8101a07b9d2c44b83&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/543472005.jpg?k=99aae30ec57bf084d51ea54580ce93642dd163fc5d4293a8101a07b9d2c44b83&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/543472005.jpg?k=99aae30ec57bf084d51ea54580ce93642dd163fc5d4293a8101a07b9d2c44b83&o="
+          ],
+          "reviewScoreWord": "Wonderful",
+          "name": "Radisson Collection Hotel, Santa Sofia Milan",
+          "propertyClass": 5,
+          "qualityClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 543472005,
+          "rankingPosition": 8,
+          "position": 8,
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "currency": "EUR",
+          "blockIds": [
+            "932385904_365378329_2_2_0"
+          ],
+          "latitude": 45.4559248,
+          "isFirstPage": true,
+          "longitude": 9.1877159,
+          "isPreferred": true,
+          "reviewScore": 9,
+          "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "00:00"
+          },
+          "reviewCount": 3590,
+          "checkout": {
+            "untilTime": "12:00",
+            "fromTime": "00:00"
+          }
+        }
+      },
+      {
+        "hotel_id": 14172994,
+        "accessibilityLabel": "Lh HOTELS.\n4 out of 5 stars.\nThis is a Preferred property.\n8.2 Very Good 985 reviews.\n‎Certosa‬ • ‎6.5 km from downtown‬.\nBreakfast included.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\n317 EUR.\n+92 EUR taxes and charges.\nWe have 3 left at this price.",
+        "property": {
+          "blockIds": [
+            "1417299401_413407004_0_1_0"
+          ],
+          "latitude": 45.5004923,
+          "isFirstPage": true,
+          "longitude": 9.1229595,
+          "isPreferred": true,
+          "checkout": {
+            "fromTime": "10:00",
+            "untilTime": "11:00"
+          },
+          "reviewScore": 8.2,
+          "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "00:00"
+          },
+          "reviewCount": 985,
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "optOutFromGalleryChanges": 0,
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "benefitBadges": [],
+            "excludedPrice": {
+              "value": 91.6638000000001,
+              "currency": "EUR"
+            },
+            "grossPrice": {
+              "amountRounded": "€ 317",
+              "value": 316.6362,
+              "currency": "EUR"
+            }
+          },
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/882693042.jpg?k=2d6c81e6e7d7e5c229508bc053e453e2f1d7de0a1495d62935438a24aa4e4eef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/882693042.jpg?k=2d6c81e6e7d7e5c229508bc053e453e2f1d7de0a1495d62935438a24aa4e4eef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/882693042.jpg?k=2d6c81e6e7d7e5c229508bc053e453e2f1d7de0a1495d62935438a24aa4e4eef&o="
+          ],
+          "id": 14172994,
+          "accuratePropertyClass": 4,
+          "qualityClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 882693042,
+          "reviewScoreWord": "Very Good",
+          "propertyClass": 4,
+          "name": "Lh HOTELS",
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "currency": "EUR",
+          "rankingPosition": 9,
+          "position": 9
+        }
+      },
+      {
+        "hotel_id": 1681069,
+        "accessibilityLabel": "Room Mate Collection Giulia, Milan.\n4 out of 5 stars.\nThis is a Preferred property.\n9.2 Wonderful 3118 reviews.\n‎In downtown‬\n‎Sustainability certification‬.\n Hotel room : Beds: 1 double or 2 twins.\nPrice for 3 nights, 2 adults.\nOriginal price 1600 EUR. Current price 1456 EUR..\n+220 EUR taxes and charges.\nWe have 4 left at this price.",
+        "property": {
+          "reviewCount": 3118,
+          "reviewScore": 9.2,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+          },
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "12:00"
+          },
+          "longitude": 9.18927329999997,
+          "isPreferred": true,
+          "isFirstPage": true,
+          "blockIds": [
+            "168106901_89694804_0_2_0_303439"
+          ],
+          "latitude": 45.4651759,
+          "rankingPosition": 10,
+          "position": 10,
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: Beds: 1 double or 2 twins",
+          "reviewScoreWord": "Wonderful",
+          "propertyClass": 4,
+          "name": "Room Mate Collection Giulia, Milan",
+          "countryCode": "it",
+          "mainPhotoId": 117124444,
+          "qualityClass": 0,
+          "id": 1681069,
+          "accuratePropertyClass": 4,
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/117124444.jpg?k=04e992933bb0e6505246e69038a68c3995bfba5fd6c03a317d37b2e65f2bd113&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/117124444.jpg?k=04e992933bb0e6505246e69038a68c3995bfba5fd6c03a317d37b2e65f2bd113&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/117124444.jpg?k=04e992933bb0e6505246e69038a68c3995bfba5fd6c03a317d37b2e65f2bd113&o="
+          ],
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "benefitBadges": [],
+            "strikethroughPrice": {
+              "value": 1599.5454,
+              "currency": "EUR",
+              "amountRounded": "€ 1,600"
+            },
+            "excludedPrice": {
+              "value": 219.9546,
+              "currency": "EUR"
+            },
+            "grossPrice": {
+              "amountRounded": "€ 1,456",
+              "currency": "EUR",
+              "value": 1455.5854
+            },
+            "taxExceptions": []
+          },
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23"
+        }
+      },
+      {
+        "hotel_id": 16948791,
+        "accessibilityLabel": "Numa Milan Manfredo.\n3 out of 5 for property rating.\n9.5 Exceptional 4 reviews.\n‎In downtown‬.\nMobile-only price.\n Private room : 1 bed.\nPrice for 3 nights, 2 adults.\nOriginal price 735 EUR. Current price 598 EUR..\n+108 EUR taxes and charges.\nWe have 7 left at this price.",
+        "property": {
+          "qualityClass": 3,
+          "mainPhotoId": 911120366,
+          "countryCode": "it",
+          "name": "Numa Milan Manfredo",
+          "propertyClass": 0,
+          "reviewScoreWord": "Exceptional",
+          "currency": "EUR",
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Private room</b>: 1 bed",
+          "position": 11,
+          "rankingPosition": 11,
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "benefitBadges": [
+              {
+                "text": "Mobile-only price",
+                "identifier": "Mobile Rate",
+                "explanation": "Mobile-only price",
+                "variant": "constructive"
+              }
+            ],
+            "strikethroughPrice": {
+              "currency": "EUR",
+              "value": 734.545454545455,
+              "amountRounded": "€ 735"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 107.7273
+            },
+            "grossPrice": {
+              "value": 597.7727,
+              "currency": "EUR",
+              "amountRounded": "€ 598"
+            },
+            "taxExceptions": []
+          },
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/911120366.jpg?k=cba20dc49c932d5347fba666aff8b81576e9bf455d5ad0c69aac83e3890e8df7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/911120366.jpg?k=cba20dc49c932d5347fba666aff8b81576e9bf455d5ad0c69aac83e3890e8df7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/911120366.jpg?k=cba20dc49c932d5347fba666aff8b81576e9bf455d5ad0c69aac83e3890e8df7&o="
+          ],
+          "ufi": -121726,
+          "accuratePropertyClass": 0,
+          "id": 16948791,
+          "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "08:00"
+          },
+          "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "00:00"
+          },
+          "reviewScore": 9.5,
+          "reviewCount": 4,
+          "latitude": 45.4667592,
+          "blockIds": [
+            "1694879103_441149078_2_2_0"
+          ],
+          "isFirstPage": true,
+          "longitude": 9.1829345
+        }
+      },
+      {
+        "hotel_id": 6219210,
+        "accessibilityLabel": "B&B Hotel Milano City Center Duomo.\n3 out of 5 stars.\nThis is a Preferred property.\n8.5 Very Good 1518 reviews.\n‎In downtown‬\n‎Sustainability certification‬.\n1 bed.\nPrice for 3 nights, 2 adults.\n871 EUR.\n+87 EUR taxes and charges.",
+        "property": {
+          "qualityClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 785176366,
+          "reviewScoreWord": "Very Good",
+          "name": "B&B Hotel Milano City Center Duomo",
+          "propertyClass": 3,
+          "currency": "EUR",
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "1 bed",
+          "rankingPosition": 12,
+          "position": 12,
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "benefitBadges": [],
+            "excludedPrice": {
+              "value": 87.1353841176001,
+              "currency": "EUR"
+            },
+            "grossPrice": {
+              "value": 871.1676544578,
+              "currency": "EUR",
+              "amountRounded": "€ 871"
+            },
+            "taxExceptions": []
+          },
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/785176366.jpg?k=c555d790cadf0ed87caa7c7cef4c520f6d0cd7db99dbb05d1de4171c54967e8e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/785176366.jpg?k=c555d790cadf0ed87caa7c7cef4c520f6d0cd7db99dbb05d1de4171c54967e8e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/785176366.jpg?k=c555d790cadf0ed87caa7c7cef4c520f6d0cd7db99dbb05d1de4171c54967e8e&o="
+          ],
+          "id": 6219210,
+          "accuratePropertyClass": 3,
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "12:00"
+          },
+          "reviewScore": 8.5,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "14:00"
+          },
+          "reviewCount": 1518,
+          "blockIds": [
+            "0_0_2_0_0"
+          ],
+          "latitude": 45.4674469882959,
+          "isFirstPage": true,
+          "longitude": 9.18491475330352,
+          "isPreferred": true,
+          "isTPI": true
+        }
+      },
+      {
+        "hotel_id": 15712050,
+        "accessibilityLabel": "TheROOMS by TheFLOOR Collection.\n1 out of 5 stars.\nThis is a Preferred property.\n8.8 Excellent 324 reviews.\n‎In downtown‬.\n Hotel room : Beds: 1 double or 2 twins.\nPrice for 3 nights, 2 adults.\nOriginal price 786 EUR. Current price 715 EUR..\n+97 EUR taxes and charges.\nWe have 1 left at this price.",
+        "property": {
+          "propertyClass": 1,
+          "name": "TheROOMS by TheFLOOR Collection",
+          "reviewScoreWord": "Excellent",
+          "mainPhotoId": 818383370,
+          "countryCode": "it",
+          "qualityClass": 0,
+          "position": 13,
+          "rankingPosition": 13,
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: Beds: 1 double or 2 twins",
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "excludedPrice": {
+              "value": 96.5700000000001,
+              "currency": "EUR"
+            },
+            "strikethroughPrice": {
+              "amountRounded": "€ 786",
+              "currency": "EUR",
+              "value": 785.7
+            },
+            "benefitBadges": [],
+            "grossPrice": {
+              "amountRounded": "€ 715",
+              "currency": "EUR",
+              "value": 714.99
+            },
+            "taxExceptions": []
+          },
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "accuratePropertyClass": 1,
+          "id": 15712050,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/818383370.jpg?k=93e0377ee399be6953fa17965d952fb8ce1f944e0a1a40c1bfd0294733f815d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/818383370.jpg?k=93e0377ee399be6953fa17965d952fb8ce1f944e0a1a40c1bfd0294733f815d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/818383370.jpg?k=93e0377ee399be6953fa17965d952fb8ce1f944e0a1a40c1bfd0294733f815d2&o="
+          ],
+          "ufi": -121726,
+          "reviewCount": 324,
+          "checkin": {
+            "untilTime": "00:30",
+            "fromTime": "15:00"
+          },
+          "reviewScore": 8.8,
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "10:00"
+          },
+          "latitude": 45.4606305049434,
+          "blockIds": [
+            "1571205001_428194677_2_2_0"
+          ],
+          "isPreferred": true,
+          "longitude": 9.1820868104334,
+          "isFirstPage": true
+        }
+      },
+      {
+        "hotel_id": 81404,
+        "accessibilityLabel": "Ibis Milano Centro.\n3 out of 5 stars.\nThis is a Preferred property.\n7.8 Good 8920 reviews.\n‎Central Station‬ • ‎1.9 km from downtown‬\n‎Sustainability certification‬.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\n827 EUR.\n+125 EUR taxes and charges.",
+        "property": {
+          "isPreferred": true,
+          "longitude": 9.20159697532654,
+          "isFirstPage": true,
+          "latitude": 45.478363284191,
+          "blockIds": [
+            "8140409_94296350_2_34_0"
+          ],
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "12:00"
+          },
+          "reviewCount": 8920,
+          "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "00:00"
+          },
+          "reviewScore": 7.8,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/907431860.jpg?k=4112d04e943596a666cbadd61e2dfa70ab8c7c9df19bdd23a41927d25f8a7c64&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/907431860.jpg?k=4112d04e943596a666cbadd61e2dfa70ab8c7c9df19bdd23a41927d25f8a7c64&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/907431860.jpg?k=4112d04e943596a666cbadd61e2dfa70ab8c7c9df19bdd23a41927d25f8a7c64&o="
+          ],
+          "ufi": -121726,
+          "accuratePropertyClass": 3,
+          "id": 81404,
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "grossPrice": {
+              "value": 827.2726,
+              "currency": "EUR",
+              "amountRounded": "€ 827"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 124.7274
+            },
+            "benefitBadges": [],
+            "taxExceptions": []
+          },
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "wishlistName": "Milan",
+          "currency": "EUR",
+          "position": 14,
+          "rankingPosition": 14,
+          "mainPhotoId": 907431860,
+          "countryCode": "it",
+          "qualityClass": 0,
+          "propertyClass": 3,
+          "name": "Ibis Milano Centro",
+          "reviewScoreWord": "Good"
+        }
+      },
+      {
+        "hotel_id": 16309139,
+        "accessibilityLabel": "Milano Centro 3 Bdr.\n4 out of 5 for property rating.\n10 Exceptional 3 reviews.\n‎In downtown‬.\n Entire apartment – 89 m² : 4 beds • 3 bedrooms • 1 living room • 2 bathrooms.\nPrice for 3 nights, 2 adults.\n653 EUR.\n+122 EUR taxes and charges.\nWe have 1 left at this price.",
+        "property": {
+          "reviewScoreWord": "Exceptional",
+          "propertyClass": 0,
+          "name": "Milano Centro 3 Bdr",
+          "countryCode": "it",
+          "mainPhotoId": 903822192,
+          "qualityClass": 4,
+          "rankingPosition": 15,
+          "position": 15,
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Entire apartment – 89 m²</b>: 4 beds • 3 bedrooms • 1 living room • 2 bathrooms",
+          "currency": "EUR",
+          "optOutFromGalleryChanges": 0,
+          "priceBreakdown": {
+            "grossPrice": {
+              "currency": "EUR",
+              "value": 652.9091,
+              "amountRounded": "€ 653"
+            },
+            "excludedPrice": {
+              "value": 122.2909,
+              "currency": "EUR"
+            },
+            "benefitBadges": [],
+            "taxExceptions": []
+          },
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "id": 16309139,
+          "accuratePropertyClass": 0,
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/903822192.jpg?k=5954d4a350ab591913d4cf7c21fd0f1219e41cc8ad0f47f0dc32f27004a024cf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/903822192.jpg?k=5954d4a350ab591913d4cf7c21fd0f1219e41cc8ad0f47f0dc32f27004a024cf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/903822192.jpg?k=5954d4a350ab591913d4cf7c21fd0f1219e41cc8ad0f47f0dc32f27004a024cf&o="
+          ],
+          "reviewCount": 3,
+          "reviewScore": 10,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "00:00"
+          },
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "00:00"
+          },
+          "blockIds": [
+            "1630913901_433633400_2_0_0"
+          ],
+          "latitude": 45.4661117,
+          "longitude": 9.1952581,
+          "isFirstPage": true
+        }
+      },
+      {
+        "hotel_id": 9244955,
+        "accessibilityLabel": "21 House of Stories Navigli.\n4 out of 5 stars.\nThis is a Preferred property.\n9.0 Wonderful 3713 reviews.\n‎Navigli‬ • ‎1.7 km from downtown‬.\nBreakfast included.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\n809 EUR.\n+141 EUR taxes and charges.",
+        "property": {
+          "rankingPosition": 16,
+          "position": 16,
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "currency": "EUR",
+          "reviewScoreWord": "Wonderful",
+          "propertyClass": 4,
+          "name": "21 House of Stories Navigli",
+          "qualityClass": 0,
+          "countryCode": "it",
+          "mainPhotoId": 878361592,
+          "id": 9244955,
+          "accuratePropertyClass": 4,
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/878361592.jpg?k=fa84391ddb3dd66e730258de98eae3a85017e2b131dacb33fa5f09ea63e028a5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/878361592.jpg?k=fa84391ddb3dd66e730258de98eae3a85017e2b131dacb33fa5f09ea63e028a5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/878361592.jpg?k=fa84391ddb3dd66e730258de98eae3a85017e2b131dacb33fa5f09ea63e028a5&o="
+          ],
+          "optOutFromGalleryChanges": 1,
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "grossPrice": {
+              "value": 809.0344867842,
+              "currency": "EUR",
+              "amountRounded": "€ 809"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 140.8103551644
+            },
+            "benefitBadges": []
+          },
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "reviewScore": 9,
+          "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "00:00"
+          },
+          "reviewCount": 3713,
+          "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "11:00"
+          },
+          "isTPI": true,
+          "isFirstPage": true,
+          "longitude": 9.177974,
+          "isPreferred": true,
+          "blockIds": [
+            "924495503_0_2_1_0"
+          ],
+          "latitude": 45.451313
+        }
+      },
+      {
+        "hotel_id": 14411351,
+        "accessibilityLabel": "7BA Hotel Milano.\n4 out of 5 stars.\nThis is a Preferred property.\n8.6 Excellent 1626 reviews.\n‎Central Station‬ • ‎1.9 km from downtown‬\n‎Sustainability certification‬.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\n658 EUR.\n+126 EUR taxes and charges.",
+        "property": {
+          "countryCode": "it",
+          "mainPhotoId": 770168184,
+          "qualityClass": 0,
+          "reviewScoreWord": "Excellent",
+          "name": "7BA Hotel Milano",
+          "propertyClass": 4,
+          "currency": "EUR",
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "rankingPosition": 17,
+          "position": 17,
+          "checkinDate": "2026-10-20",
+          "checkoutDate": "2026-10-23",
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "grossPrice": {
+              "value": 658.4714939998,
+              "currency": "EUR",
+              "amountRounded": "€ 658"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 125.7558290928
+            },
+            "benefitBadges": []
+          },
+          "optOutFromGalleryChanges": 0,
+          "ufi": -121726,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/770168184.jpg?k=bf7dc2397f4b7556a307f99858850d0ec13bd4041b17fee3e594faf2e9d4806f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/770168184.jpg?k=bf7dc2397f4b7556a307f99858850d0ec13bd4041b17fee3e594faf2e9d4806f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/770168184.jpg?k=bf7dc2397f4b7556a307f99858850d0ec13bd4041b17fee3e594faf2e9d4806f&o="
+          ],
+          "id": 14411351,
+          "accuratePropertyClass": 4,
+          "checkout": {
+            "untilTime": "12:00",
+            "fromTime": "00:00"
+          },
+          "reviewCount": 1626,
+          "reviewScore": 8.6,
+          "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "14:00"
+          },
+          "blockIds": [
+            "1441135101_0_2_0_0"
+          ],
+          "latitude": 45.476341,
+          "longitude": 9.2066879,
+          "isPreferred": true,
+          "isFirstPage": true,
+          "isTPI": true
+        }
+      },
+      {
+        "hotel_id": 14967232,
+        "accessibilityLabel": "Hostel INN PETRELLA.\n8.5 Very Good 814 reviews.\n‎Central Station‬ • ‎2.8 km from downtown‬.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\nOriginal price 442 EUR. Current price 402 EUR..\n+62 EUR taxes and charges.\nWe have 1 left at this price.",
+        "property": {
+          "isFirstPage": true,
+          "longitude": 9.2120468,
+          "latitude": 45.4829111,
+          "blockIds": [
+            "1496723201_421348493_0_2_0"
+          ],
+          "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+          },
+          "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "22:00"
+          },
+          "reviewScore": 8.5,
+          "reviewCount": 814,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/750394890.jpg?k=3ca7a5e2f6707b26e9c4414ee512fb87080c8730d0b2e0d3098c3c7150bc8b9e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/750394890.jpg?k=3ca7a5e2f6707b26e9c4414ee512fb87080c8730d0b2e0d3098c3c7150bc8b9e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/750394890.jpg?k=3ca7a5e2f6707b26e9c4414ee512fb87080c8730d0b2e0d3098c3c7150bc8b9e&o="
+          ],
+          "ufi": -121726,
+          "accuratePropertyClass": 0,
+          "id": 14967232,
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "strikethroughPrice": {
+              "currency": "EUR",
+              "value": 441.818181818182,
+              "amountRounded": "€ 442"
+            },
+            "benefitBadges": [],
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 62.1818000000001
+            },
+            "grossPrice": {
+              "amountRounded": "€ 402",
+              "value": 402.0582,
+              "currency": "EUR"
+            }
+          },
+          "optOutFromGalleryChanges": 0,
+          "wishlistName": "Milan",
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "currency": "EUR",
+          "position": 18,
+          "rankingPosition": 18,
+          "qualityClass": 0,
+          "mainPhotoId": 750394890,
+          "countryCode": "it",
+          "name": "Hostel INN PETRELLA",
+          "propertyClass": 0,
+          "reviewScoreWord": "Very Good"
+        }
+      },
+      {
+        "hotel_id": 248162,
+        "accessibilityLabel": "Hotel Minerva.\n3 out of 5 stars.\nThis is a Preferred property.\n7.3 Good 1680 reviews.\n‎Navigli‬ • ‎1.8 km from downtown‬.\nMobile-only price.\nBreakfast included.\n Hotel room : 1 bed.\nPrice for 3 nights, 2 adults.\nOriginal price 465 EUR. Current price 381 EUR..\n+84 EUR taxes and charges.\nWe have 6 left at this price.",
+        "property": {
+          "latitude": 45.4539153682627,
+          "blockIds": [
+            "24816203_88450325_0_1_0"
+          ],
+          "isFirstPage": true,
+          "isPreferred": true,
+          "longitude": 9.17075827717781,
+          "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "23:30"
+          },
+          "reviewScore": 7.3,
+          "reviewCount": 1680,
+          "checkout": {
+            "fromTime": "04:00",
+            "untilTime": "11:00"
+          },
+          "optOutFromGalleryChanges": 0,
+          "priceBreakdown": {
+            "taxExceptions": [],
+            "grossPrice": {
+              "amountRounded": "€ 381",
+              "value": 380.8573,
+              "currency": "EUR"
+            },
+            "excludedPrice": {
+              "currency": "EUR",
+              "value": 83.8527000000001
+            },
+            "strikethroughPrice": {
+              "currency": "EUR",
+              "value": 465.027272727273,
+              "amountRounded": "€ 465"
+            },
+            "benefitBadges": [
+              {
+                "variant": "constructive",
+                "text": "Mobile-only price",
+                "identifier": "Mobile Rate",
+                "explanation": "Mobile-only price"
+              }
+            ]
+          },
+          "checkoutDate": "2026-10-23",
+          "checkinDate": "2026-10-20",
+          "accuratePropertyClass": 3,
+          "id": 248162,
+          "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square500/51427784.jpg?k=38f9b70c700b82e1a2f40a49298387931cdc9a026577a1dbe20913f09122c379&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square1024/51427784.jpg?k=38f9b70c700b82e1a2f40a49298387931cdc9a026577a1dbe20913f09122c379&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/square2000/51427784.jpg?k=38f9b70c700b82e1a2f40a49298387931cdc9a026577a1dbe20913f09122c379&o="
+          ],
+          "ufi": -121726,
+          "propertyClass": 3,
+          "name": "Hotel Minerva",
+          "reviewScoreWord": "Good",
+          "qualityClass": 0,
+          "mainPhotoId": 51427784,
+          "countryCode": "it",
+          "position": 19,
+          "rankingPosition": 19,
+          "recommendedUnitsConfigurationLabel": "<b>Hotel room</b>: 1 bed",
+          "wishlistName": "Milan",
+          "currency": "EUR"
+        }
+      }
+    ],
+    "meta": [
+      {
+        "title": "4237 properties"
+      }
+    ],
+    "appear": [
+      {
+        "component": {
+          "props": {
+            "content": {
+              "props": {
+                "fitContentWidth": true,
+                "items": [
+                  {
+                    "props": {
+                      "component": {
+                        "props": {
+                          "items": [
+                            {
+                              "props": {
+                                "text": [
+                                  {
+                                    "text": "Read more on how payments affect the order of listed properties",
+                                    "font": "body_2"
+                                  },
+                                  {
+                                    "color": "foreground",
+                                    "font": "strong_2",
+                                    "text": "  "
+                                  },
+                                  {
+                                    "color": "action_foreground",
+                                    "font": "body_2",
+                                    "linkActions": [
+                                      {
+                                        "props": {
+                                          "url": "booking://webview?url=https%3A%2F%2Fm.booking.com%2Fgeneral.en-us.html%3Faid%3D332731%3Btmpl%3Ddocs%2Fterms-and-conditions"
+                                        }
+                                      }
+                                    ],
+                                    "text": "Learn more"
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "spacing": "spacing_half"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "props": {}
+                  },
+                  {
+                    "props": {
+                      "component": {
+                        "props": {
+                          "icon": "close",
+                          "tertiaryTintedColor": "foreground",
+                          "variant": "tertiary_tinted",
+                          "accessibilityLabel": "Close"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "fill": true
+          }
+        },
+        "id": "cma"
+      },
+      {
+        "id": "banner_qualityrating",
+        "component": {
+          "props": {
+            "title": "",
+            "text": "Properties with these icons have been awarded Booking.com's quality rating for homes"
+          }
+        }
+      },
+      {
+        "contentUrl": "https://mobile-apps.booking.com/json/mobile.saba?route_path=saba-chat-entrypoint&arrival_date=2026-10-20&categories_filter_additional_data=&departure_date=2026-10-23&dest_ids=-121726&exposure_api_version=2.59&flex_window=0&generate_map_bounding_box=1&guest_qty=2&include_bh_quality_classification=1&include_genius_badge=1&include_rtb=1&include_ski_information=1&location_source=autocomplete&mobile_saba_variant=1&outcome=search_results&reason=new_search&room_qty=1&sb_calendar_open=1&search_type=city&selected_filter_sources=&sort_by=auto&sort_by_source=sort_options&source=startup_page&travel_purpose=&units=metric&offset=0&affiliate_id=332731&attribution_affiliate_id=332731&currency_code=EUR&device_id=273805cb41984326bce0560231169fbd&distance_unit=metric&languagecode=en-us&min_saba_version=31&network_type=wifi&notification_auth_status=3&saba_version=179&screen_density=3&temperature_unit=c&user_os=26.6&user_version=69.4-iphone&categories_filter=price%3A%3AEUR-min-max%2CHilton&page=search-results"
+      },
+      {
+        "component": {
+          "props": {
+            "title": "Sign in and save money",
+            "text": "Get instant access to our Genius loyalty program and enjoy discounts at properties worldwide."
+          }
+        },
+        "id": "signin_now"
+      },
+      {
+        "component": {
+          "props": {
+            "id": "attractions_cross_sell",
+            "component": {
+              "props": {
+                "contentUrl": "https://mobile-apps.booking.com/json/mobile.saba?route_path=cross-sell&arrival_date=2026-10-20&categories_filter_additional_data=&departure_date=2026-10-23&dest_ids=-121726&exposure_api_version=2.59&flex_window=0&generate_map_bounding_box=1&guest_qty=2&include_bh_quality_classification=1&include_genius_badge=1&include_rtb=1&include_ski_information=1&location_source=autocomplete&mobile_saba_variant=1&outcome=search_results&reason=new_search&room_qty=1&sb_calendar_open=1&search_type=city&selected_filter_sources=&sort_by=auto&sort_by_source=sort_options&source=startup_page&travel_purpose=&units=metric&offset=0&affiliate_id=332731&attribution_affiliate_id=332731&currency_code=EUR&device_id=273805cb41984326bce0560231169fbd&distance_unit=metric&languagecode=en-us&min_saba_version=31&network_type=wifi&notification_auth_status=3&saba_version=179&screen_density=3&temperature_unit=c&user_os=26.6&user_version=69.4-iphone&categories_filter=price%3A%3AEUR-min-max%2CHilton&component_id=attractions_cross_sell",
+                "payload": {
+                  "display_mode": "STANDARD",
+                  "language_code": "en-us",
+                  "screen_width": 1,
+                  "currency_code": "EUR",
+                  "placements": [
+                    {
+                      "accommodation_context": {
+                        "children": [],
+                        "check_in": "2026-10-20",
+                        "check_out": "2026-10-23",
+                        "adults": 2
+                      },
+                      "destination_location": {
+                        "cc1": "it",
+                        "ufi": -121726
+                      },
+                      "page": "ACCOMMODATION_SEARCH_RESULTS",
+                      "client_id": "c3112484-46f6-43a1-a9b3-1cd9c4442b8b",
+                      "placement_name": "IN_FEED_ATTRACTION_BANNER"
+                    }
+                  ],
+                  "header_override": {
+                    "X-Booking-CCXP-Version": "2.59",
+                    "X-Booking-Deeplink-Affiliate-Id": 0,
+                    "X-Booking-Affiliate-Id": 332731
+                  }
+                },
+                "method": "post"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

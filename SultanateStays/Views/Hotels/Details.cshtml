@@ -1,0 +1,89 @@
+﻿@model SultanateStays.ViewModels.HotelDetailsViewModel
+@{
+    var h = Model.Hotel;
+    var q = Model.Query;
+    ViewData["Title"] = h.Name;
+}
+
+<section class="space-y-8">
+    @if (q.Nights > 0)
+    {
+        <a class="inline-flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-indigo-700"
+           asp-controller="Hotels" asp-action="Search"
+           asp-route-destination="@q.Destination"
+           asp-route-checkIn="@q.CheckIn.ToString("yyyy-MM-dd")"
+           asp-route-checkOut="@q.CheckOut.ToString("yyyy-MM-dd")"
+           asp-route-adults="@q.Adults"
+           asp-route-children="@q.Children"
+           asp-route-rooms="@q.Rooms"
+           asp-route-currency="@q.Currency">← Sonuçlara dön</a>
+    }
+
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+        <div class="space-y-6 lg:col-span-8">
+            <div class="flex h-96 items-center justify-center overflow-hidden rounded-2xl bg-slate-100 ring-1 ring-slate-200">
+                @if (h.PhotoUrls.Count > 0)
+                {
+                    <img class="h-full w-full object-cover" src="@h.PhotoUrls[0]" alt="@h.Name" />
+                }
+                else
+                {
+                    <p class="text-sm text-slate-500">Fotoğraflar yakında eklenecek.</p>
+                }
+            </div>
+
+            <div>
+                <h1 class="text-3xl font-bold tracking-tight text-slate-900">@h.Name</h1>
+                <p class="mt-2 text-sm text-slate-600">Adres: @h.Address, @h.District, @h.City @h.Zip</p>
+                <p class="mt-1 text-sm text-slate-600">@h.ReviewCount yorum</p>
+            </div>
+
+            <section class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                <h2 class="text-xl font-semibold text-slate-900">Olanaklar</h2>
+                @if (h.Facilities.Count == 0)
+                {
+                    <p class="mt-3 text-sm text-slate-600">Olanak bilgisi bulunamadı.</p>
+                }
+                else
+                {
+                    <ul class="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                        @foreach (var facility in h.Facilities)
+                        {
+                            <li class="flex items-center gap-2 text-sm text-slate-700">
+                                <span class="h-1.5 w-1.5 rounded-full bg-indigo-700"></span>
+                                @facility
+                            </li>
+                        }
+                    </ul>
+                }
+            </section>
+
+            <section class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                <h2 class="text-xl font-semibold text-slate-900">Hakkında</h2>
+                <p class="mt-3 text-sm text-slate-600">Açıklama yakında eklenecek.</p>
+            </section>
+        </div>
+
+        <aside class="lg:col-span-4">
+            <div class="sticky top-28 space-y-4 rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200">
+                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Arama özeti</p>
+
+                @if (q.Nights > 0)
+                {
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between"><dt class="text-slate-600">Giriş</dt><dd class="font-semibold">@q.CheckIn.ToString("dd.MM.yyyy")</dd></div>
+                        <div class="flex justify-between"><dt class="text-slate-600">Çıkış</dt><dd class="font-semibold">@q.CheckOut.ToString("dd.MM.yyyy")</dd></div>
+                        <div class="flex justify-between"><dt class="text-slate-600">Konaklama</dt><dd class="font-semibold">@q.Nights gece</dd></div>
+                        <div class="flex justify-between"><dt class="text-slate-600">Misafir</dt><dd class="font-semibold">@q.Adults yetişkin, @q.Children çocuk</dd></div>
+                        <div class="flex justify-between"><dt class="text-slate-600">Oda</dt><dd class="font-semibold">@q.Rooms</dd></div>
+                    </dl>
+                }
+                else
+                {
+                    <p class="text-sm text-slate-600">Tarih görmek için ana sayfadan arama yapın.</p>
+                    <a class="block rounded-xl bg-indigo-700 py-3 text-center text-sm font-semibold text-white hover:bg-indigo-800" asp-controller="Home" asp-action="Index">Arama yap</a>
+                }
+            </div>
+        </aside>
+    </div>
+</section>

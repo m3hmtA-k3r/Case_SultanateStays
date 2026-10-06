@@ -1,0 +1,90 @@
+﻿@model SultanateStays.ViewModels.HotelSearchViewModel
+@{
+    ViewData["Title"] = "Oteller";
+    var q = Model.Query;
+    var hotels = Model.Hotels ?? new List<HotelSummary>();
+    var tr = System.Globalization.CultureInfo.GetCultureInfo("tr-TR");
+}
+
+<section class="space-y-6">
+    <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <div>
+            <p class="text-sm font-semibold uppercase tracking-wider text-indigo-700">Arama sonuçları</p>
+            <h1 class="text-3xl font-bold tracking-tight text-slate-900">@q.Destination</h1>
+            <p class="mt-1 text-sm text-slate-600">
+                @q.CheckIn.ToString("dd.MM.yyyy") – @q.CheckOut.ToString("dd.MM.yyyy") · @q.Nights gece · @q.Adults yetişkin, @q.Children çocuk · @q.Rooms oda
+            </p>
+        </div>
+
+        <div class="flex items-center gap-2 rounded-full bg-slate-100 p-1">
+            @foreach (var currency in new[] { "EUR", "USD", "TRY" })
+            {
+                <a class="rounded-full px-4 py-1 text-sm transition-colors @(currency == q.Currency ? "bg-white font-semibold text-indigo-700 shadow-sm" : "text-slate-600 hover:text-slate-900")"
+                   asp-controller="Hotels" asp-action="Search"
+                   asp-route-destination="@q.Destination"
+                   asp-route-checkIn="@q.CheckIn.ToString("yyyy-MM-dd")"
+                   asp-route-checkOut="@q.CheckOut.ToString("yyyy-MM-dd")"
+                   asp-route-adults="@q.Adults"
+                   asp-route-children="@q.Children"
+                   asp-route-rooms="@q.Rooms"
+                   asp-route-currency="@currency">@currency</a>
+            }
+        </div>
+    </div>
+
+    @if (Model.ErrorMessage is not null)
+    {
+        <div class="rounded-2xl bg-red-50 p-6 text-red-800" role="alert">
+            <p class="font-semibold">Arama tamamlanamadı</p>
+            <p class="text-sm">@Model.ErrorMessage</p>
+            <a class="mt-2 inline-block text-sm font-semibold text-indigo-700 underline" asp-controller="Home" asp-action="Index">Aramayı düzenle</a>
+        </div>
+    }
+    else if (hotels.Count == 0)
+    {
+        <div class="rounded-2xl bg-white p-10 text-center shadow-sm ring-1 ring-slate-200">
+            <p class="text-lg font-semibold">Bu tarihler için uygun otel bulunamadı.</p>
+            <p class="mt-1 text-sm text-slate-600">Tarihleri veya misafir sayısını değiştirip tekrar deneyin.</p>
+        </div>
+    }
+    else
+    {
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+            @foreach (var hotel in hotels)
+            {
+                <article class="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition-shadow hover:shadow-xl">
+                    <div class="relative h-56 overflow-hidden bg-slate-100">
+                        @if (!string.IsNullOrEmpty(hotel.PhotoUrl))
+                        {
+                            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="@hotel.PhotoUrl" alt="@hotel.Name" loading="lazy" />
+                        }
+                        <span class="absolute right-3 top-3 rounded-xl bg-white/90 px-2.5 py-1 text-lg font-extrabold text-indigo-700 backdrop-blur">
+                            @hotel.ReviewScore.ToString("0.0", tr)
+                        </span>
+                    </div>
+
+                    <div class="flex flex-1 flex-col gap-2 p-6">
+                        <h2 class="text-xl font-semibold text-slate-900 group-hover:text-indigo-700">@hotel.Name</h2>
+                        <p class="text-sm text-slate-600">@hotel.ReviewScoreWord · @hotel.ReviewCount yorum</p>
+
+                        <div class="mt-auto flex items-end justify-between gap-3 pt-4">
+                            <div>
+                                <p class="text-xs uppercase tracking-wide text-slate-500">@q.Nights gece toplam</p>
+                                <p class="text-xl font-bold text-slate-900">@hotel.TotalPrice.ToString("N0", tr) @hotel.Currency</p>
+                            </div>
+                            <a class="rounded-full bg-indigo-700 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-800"
+                               asp-controller="Hotels" asp-action="Details" asp-route-id="@hotel.Id"
+                               asp-route-destination="@q.Destination"
+                               asp-route-checkIn="@q.CheckIn.ToString("yyyy-MM-dd")"
+                               asp-route-checkOut="@q.CheckOut.ToString("yyyy-MM-dd")"
+                               asp-route-adults="@q.Adults"
+                               asp-route-children="@q.Children"
+                               asp-route-rooms="@q.Rooms"
+                               asp-route-currency="@q.Currency">Detaylar</a>
+                        </div>
+                    </div>
+                </article>
+            }
+        </div>
+    }
+</section>

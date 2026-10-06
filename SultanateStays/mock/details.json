@@ -1,0 +1,229 @@
+﻿{
+  "status": true,
+  "message": "Success",
+  "timestamp": 1791228840588,
+  "data": {
+    "ufi": -121726,
+    "hotel_id": 11311744,
+    "hotel_name": "Navigli's Nest - Close to the metro and train",
+    "url": "https://www.booking.com/hotel/it/loft-navigli-milano3.html",
+    "hotel_name_trans": "",
+    "review_nr": 12,
+    "arrival_date": "2026-10-20",
+    "departure_date": "2026-10-26",
+    "price_transparency_mode": "none",
+    "accommodation_type_name": "Apartments",
+    "latitude": 45.4517936,
+    "longitude": 9.1758474,
+    "address": "17 Ripa di Porta Ticinese",
+    "address_trans": "",
+    "city": "Milano",
+    "city_trans": "Milan",
+    "city_in_trans": "in Milan",
+    "city_name_en": "Milan",
+    "district": "Navigli",
+    "countrycode": "it",
+    "distance_to_cc": 1.71778391994116,
+    "default_language": "it",
+    "country_trans": "Italy",
+    "currency_code": "EUR",
+    "zip": "20143",
+    "timezone": "Europe/Rome",
+    "soldout": 1,
+    "available_rooms": 0,
+    "max_rooms_in_reservation": 10,
+    "average_room_size_for_ufi_m2": "19.23",
+    "is_family_friendly": 0,
+    "is_closed": 0,
+    "is_crimea": 0,
+    "is_hotel_ctrip": 0,
+    "is_price_transparent": 0,
+    "is_genius_deal": 0,
+    "is_cash_accepted_check_enabled": 1,
+    "qualifies_for_no_cc_reservation": 0,
+    "hotel_include_breakfast": 0,
+    "cc1": "it",
+    "family_facilities": [],
+    "property_highlight_strip": [
+      {
+        "context": 1,
+        "icon_list": [
+          {
+            "size": 1,
+            "icon": "wifi"
+          }
+        ],
+        "name": "Free Wifi"
+      }
+    ],
+    "facilities_block": {
+      "type": "normal",
+      "facilities": [
+        {
+          "name": "Smoke-free property",
+          "icon": "nosmoking"
+        },
+        {
+          "icon": "wifi",
+          "name": "Internet"
+        },
+        {
+          "icon": "wifi",
+          "name": "Wifi in all areas"
+        },
+        {
+          "name": "Non-smoking rooms",
+          "icon": "nosmoking"
+        },
+        {
+          "icon": "heater",
+          "name": "Heating"
+        },
+        {
+          "icon": "snowflake",
+          "name": "Air conditioning"
+        },
+        {
+          "name": "Free Wifi",
+          "icon": "wifi"
+        }
+      ],
+      "name": "Facilities"
+    },
+    "top_ufi_benefits": [
+      {
+        "translated_name": "Wifi",
+        "icon": "wifi"
+      },
+      {
+        "translated_name": "Non-smoking rooms",
+        "icon": "nosmoking"
+      },
+      {
+        "translated_name": "Heating",
+        "icon": "heater"
+      },
+      {
+        "icon": "snowflake",
+        "translated_name": "Air conditioning"
+      }
+    ],
+    "languages_spoken": {
+      "languagecode": [
+        "it",
+        "en-gb"
+      ]
+    },
+    "spoken_languages": [
+      "it",
+      "en-gb"
+    ],
+    "breakfast_review_score": {
+      "review_score": 0,
+      "review_number": 0,
+      "review_score_word": "",
+      "rating": 0,
+      "review_count": 0,
+      "review_snippet": ""
+    },
+    "wifi_review_score": {
+      "rating": 7.5
+    },
+    "min_room_distribution": {
+      "adults": 1,
+      "children": []
+    },
+    "booking_home": {
+      "keycollection_how_to_collect": "lock_box",
+      "house_rules": [
+        {
+          "icon": "smoking",
+          "type": "POLICY_SMOKING",
+          "description": "No smoking",
+          "title": "Smoking"
+        },
+        {
+          "description": "Pets are not allowed",
+          "title": "Pets",
+          "type": "POLICY_HOTEL_PETS",
+          "icon": "petfriendly"
+        },
+        {
+          "description": "Parties/events are not allowed.",
+          "title": "Parties",
+          "type": "POLICY_PARTIES",
+          "icon": "fooddrink"
+        }
+      ],
+      "quality_class": 3,
+      "is_aparthotel": 0,
+      "is_booking_home": 1,
+      "group": "apartment_like",
+      "is_single_unit_property": 1,
+      "checkin_methods": [
+        {
+          "checkin_method": "lock_box",
+          "external_references": [],
+          "updated_at": "2024-01-04 11:47:06",
+          "created_at": "2024-01-04 11:47:06",
+          "additional_info": {
+            "other_text": {
+              "text": "Arrivati presso il portone di Ripa di Porta Ticinese 17 suonare il citofono “Loft Ripa 17” digitando 55 + “simbolo campanello”. Il portone verrà aperto da remoto. Procedere sempre diritto fino all’ultima corte. Il lock box è dietro il motore del condizionatore delle due porta finestra ad arco",
+              "lang": "it"
+            },
+            "brand_name": "",
+            "location": {
+              "off_location": 0
+            }
+          },
+          "unit_id": 11311744,
+          "updated_by_script": null,
+          "stream_name": "hotel",
+          "stream_variation_name": "primary_checkin_method"
+        }
+      ],
+      "is_single_type_property": 1,
+      "segment": 2,
+      "is_vacation_rental": 1
+    },
+    "aggregated_data": {
+      "has_seating": 0,
+      "common_kitchen_fac": [],
+      "has_refundable": 0,
+      "has_nonrefundable": 0,
+      "has_kitchen": 1
+    },
+    "last_reservation": {
+      "countrycode": null,
+      "time": "",
+      "country": null
+    },
+    "free_facilities_cancel_breakfast": [
+      {
+        "facility_id": 105
+      },
+      {
+        "facility_id": 106
+      }
+    ],
+    "hotel_text": {},
+    "districts": [
+      5227,
+      10406
+    ],
+    "preferences": [],
+    "hotel_important_information_with_codes": [
+      {
+        "executing_phase": 0,
+        "sentence_id": 28,
+        "phrase": "This property does not accommodate bachelor(ette) or similar parties."
+      },
+      {
+        "is_license": 1,
+        "phrase": "License number: <strong>015146-CNI-07497, IT015146C24IW2TNV4</strong>"
+      }
+    ],
+    "block": [],
+    "rawData": {}
+  }
+}

@@ -1,0 +1,16 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Hata";
+}
+
+<section class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+    <h1 class="text-2xl font-semibold text-red-600">Bir hata oluştu</h1>
+    <p class="mt-2 text-slate-600">İsteğiniz işlenirken bir sorun çıktı. Lütfen tekrar deneyin.</p>
+
+    @if (Model.ShowRequestId)
+    {
+        <p class="mt-4 text-sm text-slate-500">
+            İstek kodu: <code class="rounded bg-slate-100 px-1.5 py-0.5">@Model.RequestId</code>
+        </p>
+    }
+</section>
