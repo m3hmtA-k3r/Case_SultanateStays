@@ -6,52 +6,56 @@
     <title>@ViewData["Title"] - SultanateStays</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />
 </head>
-<body class="flex min-h-screen flex-col bg-slate-50 text-slate-900 antialiased">
+<body class="flex min-h-screen flex-col bg-white font-[Manrope] text-[#4A5070] antialiased">
     @{
         var activeController = ViewContext.RouteData.Values["controller"]?.ToString();
         string NavClass(string controller) => activeController == controller
-        ? "text-indigo-900 font-semibold"
-        : "text-slate-600 hover:text-slate-900";
+        ? "bg-white text-[#3B3FB6] shadow-sm"
+        : "text-[#4A5070] hover:text-[#1B2140]";
     }
 
-    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+    <header class="sticky top-0 z-50 bg-[#F5F6FA]/95 backdrop-blur">
+        <div class="mx-auto flex h-20 max-w-[1280px] items-center justify-between px-4 sm:px-6">
             <a class="flex items-center gap-3" asp-controller="Home" asp-action="Index">
                 <img src="~/img/logo-mark.png" alt="" aria-hidden="true" class="h-10 w-10 object-contain" />
-                <span class="text-lg font-bold tracking-tight text-indigo-900">SultanateStays</span>
+                <span class="text-lg font-extrabold tracking-[-0.03em] text-[#1B2140]">SultanateStays</span>
             </a>
 
-            <nav class="flex items-center gap-6 text-sm">
-                <a class="@NavClass("Home")" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
-                <a class="text-slate-600 hover:text-slate-900" asp-controller="Home" asp-action="Index" asp-fragment="popular">Popüler Şehirler</a>
-                <a class="@NavClass("Hotels")" asp-controller="Hotels" asp-action="Search">Oteller</a>
+            <nav class="flex items-center gap-1 text-sm font-semibold">
+                <a class="rounded-full px-4 py-2 transition @NavClass("Home")" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                <a class="rounded-full px-4 py-2 text-[#4A5070] transition hover:text-[#1B2140]" asp-controller="Home" asp-action="Index" asp-fragment="popular">Popüler Şehirler</a>
+                <a class="rounded-full px-4 py-2 transition @NavClass("Hotels")" asp-controller="Hotels" asp-action="Search">Oteller</a>
             </nav>
         </div>
     </header>
 
-
-    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-10">
+    <main class="mx-auto w-full max-w-[1280px] flex-1 px-4 py-10 sm:px-6">
         @RenderBody()
     </main>
 
-    <footer class="mt-16 bg-slate-950 text-slate-400">
-        <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 text-sm sm:flex-row sm:items-center sm:justify-between">
-            <div class="flex items-center gap-4">
-                <span class="inline-flex rounded-xl bg-white p-2">
-                    <img src="~/img/logo.png" alt="Sultanate Stays logosu" class="h-12 w-auto object-contain" />
-                </span>
-                <p class="max-w-xs text-slate-400">Dünyanın saray otelleri, tek arama ile.</p>
+    <footer class="mt-16 bg-[#1B2140] text-white/70">
+        <div class="mx-auto max-w-[1280px] px-4 py-16 sm:px-6">
+            <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+                <div class="max-w-xs">
+                    <span class="inline-flex rounded-xl bg-white px-4 py-3">
+                        <img src="~/img/logo-transparent.png" alt="Sultanate Stays logosu" class="h-14 w-auto object-contain" />
+                    </span>
+                    <p class="mt-4 text-sm">Dünyanın saray otelleri, tek arama ile.</p>
+                </div>
+
+                <nav class="flex flex-wrap gap-x-8 gap-y-3 font-semibold">
+                    <a class="transition hover:text-white" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                    <a class="transition hover:text-white" asp-controller="Hotels" asp-action="Search">Oteller</a>
+                </nav>
             </div>
 
-            <nav class="flex items-center gap-6">
-                <a class="transition hover:text-amber-300" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
-                <a class="transition hover:text-amber-300" asp-controller="Hotels" asp-action="Search">Oteller</a>
-            </nav>
-
-            <span class="text-slate-500">&copy; 2026 SultanateStays. Tüm hakları saklıdır.</span>
+            <div class="mt-12 border-t border-white/10 pt-6 text-sm">
+                <span>&copy; 2026 SultanateStays. Tüm hakları saklıdır.</span>
+            </div>
         </div>
     </footer>
 
