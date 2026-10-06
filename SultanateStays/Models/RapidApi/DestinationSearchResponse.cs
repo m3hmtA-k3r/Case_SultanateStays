@@ -1,4 +1,7 @@
-﻿namespace SultanateStays.Models.RapidApi
+﻿
+#nullable disable
+
+namespace SultanateStays.Models.RapidApi
 {
     public class DestinationSearchResponse
     {
@@ -6,7 +9,7 @@
         public class Rootobject
         {
             public bool status { get; set; }
-            public string message { get; set; }
+            public System.Text.Json.JsonElement message { get; set; }
             public long timestamp { get; set; }
             public List<Datum> data { get; set; }
         }

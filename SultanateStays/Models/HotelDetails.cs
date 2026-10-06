@@ -10,6 +10,7 @@
         double Latitude,
         double Longitude,
         int ReviewCount,
+        string Description,
         List<string> Facilities,
         List<string> PhotoUrls);
 }

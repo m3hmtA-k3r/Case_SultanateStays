@@ -26,19 +26,32 @@
 
             <nav class="flex items-center gap-6 text-sm">
                 <a class="@NavClass("Home")" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                <a class="text-slate-600 hover:text-slate-900" asp-controller="Home" asp-action="Index" asp-fragment="popular">Popüler Şehirler</a>
                 <a class="@NavClass("Hotels")" asp-controller="Hotels" asp-action="Search">Oteller</a>
             </nav>
         </div>
     </header>
 
+
     <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-10">
         @RenderBody()
     </main>
 
-    <footer class="border-t border-slate-200 bg-white">
-        <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-            <img src="~/img/logo.png" alt="Sultanate Stays logosu" class="h-12 w-auto object-contain" />
-            <span>&copy; 2026 SultanateStays. Tüm hakları saklıdır.</span>
+    <footer class="mt-16 bg-slate-950 text-slate-400">
+        <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 text-sm sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex rounded-xl bg-white p-2">
+                    <img src="~/img/logo.png" alt="Sultanate Stays logosu" class="h-12 w-auto object-contain" />
+                </span>
+                <p class="max-w-xs text-slate-400">Dünyanın saray otelleri, tek arama ile.</p>
+            </div>
+
+            <nav class="flex items-center gap-6">
+                <a class="transition hover:text-amber-300" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                <a class="transition hover:text-amber-300" asp-controller="Hotels" asp-action="Search">Oteller</a>
+            </nav>
+
+            <span class="text-slate-500">&copy; 2026 SultanateStays. Tüm hakları saklıdır.</span>
         </div>
     </footer>
 

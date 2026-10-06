@@ -1,105 +1,273 @@
-@model SultanateStays.Models.HotelSearchQuery
+﻿@model SultanateStays.Models.HotelSearchQuery
 @{
     ViewData["Title"] = "Ana Sayfa";
+
+    var cities = new[]
+    {
+        new { Name = "Milano", Country = "İtalya", Alt = "Milano Duomo Katedrali", Image = "https://images.unsplash.com/photo-1513581166391-887a96ddeafd?w=800&q=80&auto=format&fit=crop" },
+        new { Name = "Roma", Country = "İtalya", Alt = "Roma Kolezyum", Image = "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80&auto=format&fit=crop" },
+        new { Name = "Paris", Country = "Fransa", Alt = "Paris Eyfel Kulesi", Image = "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80&auto=format&fit=crop" },
+        new { Name = "Barcelona", Country = "İspanya", Alt = "Barcelona Sagrada Familia", Image = "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80&auto=format&fit=crop" },
+    };
+
+    var accommodationTypes = new[]
+    {
+        new { Name = "Oteller", Icon = "bi-building" },
+        new { Name = "Daireler", Icon = "bi-house" },
+        new { Name = "Resort", Icon = "bi-sun" },
+        new { Name = "Tatil Evleri", Icon = "bi-house-door" },
+    };
+
+    var features = new[]
+    {
+        new { Title = "Binlerce Otel", Icon = "bi-globe2", Text = "Dünyanın farklı şehirlerindeki konaklama seçeneklerini keşfedin." },
+        new { Title = "Gerçek Puanlar", Icon = "bi-star", Text = "Misafir değerlendirmelerine göre otelleri kolayca karşılaştırın." },
+        new { Title = "Farklı Para Birimleri", Icon = "bi-currency-exchange", Text = "Fiyatları tercih ettiğiniz para biriminde görüntüleyin." },
+    };
+
+    var counterButton = "flex h-8 w-8 items-center justify-center rounded-full bg-[#EEF0FC] text-[#3B3FB6] transition hover:bg-[#3B3FB6] hover:text-white";
 }
 
-<section class="overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-700 via-indigo-800 to-slate-900 px-6 py-12 text-white shadow-xl sm:px-12">
-    <p class="text-sm font-semibold uppercase tracking-wider text-indigo-200">Saray otelleri</p>
-    <h1 class="mt-3 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-        Saray otellerini tarih ve fiyata göre arayın
-    </h1>
-    <p class="mt-4 max-w-xl text-lg text-indigo-100">
-        Şehri, tarihleri ve misafir sayısını girin; müsait otelleri toplam fiyatıyla karşılaştırın.
-    </p>
-
-    <form id="search-form" class="mt-10 grid gap-3 rounded-2xl bg-white p-4 text-slate-900 shadow-lg sm:p-5 md:grid-cols-12"
-          asp-controller="Hotels" asp-action="Search" method="get">
-
-        <label class="field md:col-span-3">
-            <span class="field-label">Şehir</span>
-            <input class="field-input" name="Destination" type="text" value="@Model.Destination" placeholder="İstanbul, Milano" required />
-        </label>
-
-        <label class="field md:col-span-2">
-            <span class="field-label">Giriş tarihi</span>
-            <input class="field-input" name="CheckIn" type="date" value="@Model.CheckIn.ToString("yyyy-MM-dd")" required />
-        </label>
-
-        <label class="field md:col-span-2">
-            <span class="field-label">Çıkış tarihi</span>
-            <input class="field-input" name="CheckOut" type="date" value="@Model.CheckOut.ToString("yyyy-MM-dd")" required />
-        </label>
-
-        <div class="grid grid-cols-3 gap-3 md:col-span-3">
-            <label class="field">
-                <span class="field-label">Yetişkin</span>
-                <select class="field-input" name="Adults">
-                    @for (var i = 1; i <= 10; i++)
-                    {
-                        <option value="@i" selected="@(i == Model.Adults)">@i</option>
-                    }
-                </select>
-            </label>
-
-            <label class="field">
-                <span class="field-label">Çocuk</span>
-                <select class="field-input" name="Children">
-                    @for (var i = 0; i <= 6; i++)
-                    {
-                        <option value="@i" selected="@(i == Model.Children)">@i</option>
-                    }
-                </select>
-            </label>
-
-            <label class="field">
-                <span class="field-label">Oda</span>
-                <select class="field-input" name="Rooms">
-                    @for (var i = 1; i <= 5; i++)
-                    {
-                        <option value="@i" selected="@(i == Model.Rooms)">@i</option>
-                    }
-                </select>
-            </label>
+<section class="rounded-b-[40px] rounded-t-3xl bg-[#F5F6FA] px-6 pb-14 pt-10 sm:px-12">
+    <div class="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+            <h1 class="max-w-[12ch] text-4xl font-extrabold leading-[1.08] tracking-[-0.035em] text-[#1B2140] sm:text-5xl lg:text-[3.6rem]">
+                Sıradaki konaklamanı keşfet.
+            </h1>
+            <p class="mt-5 max-w-md text-lg text-[#4A5070]">
+                Dünyanın dört bir yanındaki otelleri karşılaştır, sana en uygun konaklamayı kolayca bul.
+            </p>
         </div>
 
-        <label class="field md:col-span-2">
-            <span class="field-label">Para</span>
-            <select class="field-input" name="Currency">
-                @foreach (var currency in new[] { "EUR", "USD", "TRY" })
-                {
-                    <option value="@currency" selected="@(currency == Model.Currency)">@currency</option>
-                }
-            </select>
-        </label>
+        <div class="hidden lg:block" aria-hidden="true">
+            <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" class="ml-auto h-auto w-full max-w-[520px]">
+                <circle cx="300" cy="190" r="160" fill="#E9EBFB" />
+                <circle cx="415" cy="80" r="26" fill="#FFD9A8" />
+                <g fill="#FFFFFF">
+                    <rect x="120" y="70" width="90" height="26" rx="13" />
+                    <rect x="140" y="56" width="46" height="30" rx="15" />
+                    <rect x="380" y="140" width="80" height="22" rx="11" />
+                </g>
+                <path d="M60 170 C 130 110, 200 120, 250 80" fill="none" stroke="#B9BDEB" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round" />
+                <g transform="translate(250 72) rotate(-28)">
+                    <path d="M0 8 L34 4 L44 0 L48 4 L44 8 L34 8 L0 12 Z" fill="#3B3FB6" />
+                    <path d="M18 7 L10 -8 L16 -8 L28 6 Z" fill="#5A5ED0" />
+                    <path d="M18 9 L10 22 L16 22 L28 10 Z" fill="#5A5ED0" />
+                </g>
+                <rect x="230" y="120" width="140" height="210" rx="10" fill="#FFFFFF" />
+                <rect x="230" y="120" width="140" height="26" rx="10" fill="#3B3FB6" />
+                <rect x="230" y="136" width="140" height="10" fill="#3B3FB6" />
+                <text x="300" y="138" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="3">HOTEL</text>
+                <g fill="#DADDF6">
+                    <rect x="248" y="162" width="22" height="26" rx="4" />
+                    <rect x="289" y="162" width="22" height="26" rx="4" />
+                    <rect x="330" y="162" width="22" height="26" rx="4" />
+                    <rect x="248" y="202" width="22" height="26" rx="4" />
+                    <rect x="289" y="202" width="22" height="26" rx="4" fill="#FFD9A8" />
+                    <rect x="330" y="202" width="22" height="26" rx="4" />
+                    <rect x="248" y="242" width="22" height="26" rx="4" fill="#FFD9A8" />
+                    <rect x="289" y="242" width="22" height="26" rx="4" />
+                    <rect x="330" y="242" width="22" height="26" rx="4" />
+                </g>
+                <rect x="282" y="284" width="36" height="46" rx="6" fill="#3B3FB6" />
+                <rect x="380" y="200" width="70" height="130" rx="8" fill="#F5F6FA" />
+                <g fill="#DADDF6">
+                    <rect x="394" y="216" width="16" height="18" rx="3" />
+                    <rect x="420" y="216" width="16" height="18" rx="3" />
+                    <rect x="394" y="246" width="16" height="18" rx="3" />
+                    <rect x="420" y="246" width="16" height="18" rx="3" />
+                </g>
+                <rect x="184" y="230" width="8" height="100" rx="4" fill="#C9A77C" />
+                <g fill="#6FB39A">
+                    <ellipse cx="170" cy="228" rx="28" ry="9" transform="rotate(-20 170 228)" />
+                    <ellipse cx="208" cy="228" rx="28" ry="9" transform="rotate(20 208 228)" />
+                    <ellipse cx="188" cy="220" rx="9" ry="24" />
+                </g>
+                <g transform="translate(96 250)">
+                    <rect x="16" y="-14" width="26" height="18" rx="6" fill="none" stroke="#1B2140" stroke-width="5" />
+                    <rect x="0" y="0" width="58" height="76" rx="10" fill="#1B2140" />
+                    <rect x="12" y="10" width="6" height="56" rx="3" fill="#3B3FB6" />
+                    <rect x="40" y="10" width="6" height="56" rx="3" fill="#3B3FB6" />
+                    <circle cx="12" cy="80" r="4" fill="#1B2140" />
+                    <circle cx="46" cy="80" r="4" fill="#1B2140" />
+                </g>
+                <rect x="60" y="330" width="420" height="4" rx="2" fill="#DADDF6" />
+            </svg>
+        </div>
+    </div>
 
-        <button type="submit" data-search-submit
-                class="flex items-center justify-center rounded-xl bg-indigo-700 px-6 py-4 font-semibold text-white shadow transition-colors hover:bg-indigo-800 disabled:opacity-70 md:col-span-12">
-            <span>Otelleri ara</span>
-        </button>
+    <form id="search-form" class="mt-8 overflow-hidden rounded-3xl bg-white shadow-[0_24px_60px_rgba(27,33,64,0.12)]"
+          asp-controller="Hotels" asp-action="Search" method="get">
 
-        <p class="text-xs text-slate-500 md:col-span-12">
-            Giriş tarihi bugünden sonra olmalı; çıkış tarihi giriş tarihinden sonra olmalıdır.
-        </p>
+        <div class="grid grid-cols-1 gap-1 p-3 lg:grid-cols-12">
+            <label class="flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-colors hover:bg-[#F5F6FA] focus-within:bg-[#F5F6FA] lg:col-span-4">
+                <i class="bi bi-geo-alt text-xl text-[#3B3FB6]"></i>
+                <span class="flex min-w-0 flex-1 flex-col">
+                    <span class="text-xs font-semibold text-[#7A7F9A]">Nereye gidiyorsunuz?</span>
+                    <input class="w-full bg-transparent text-base font-bold text-[#1B2140] outline-none" name="Destination" type="text" value="@Model.Destination" placeholder="Şehir, bölge veya otel adı" required />
+                </span>
+            </label>
+
+            <label class="flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-colors hover:bg-[#F5F6FA] focus-within:bg-[#F5F6FA] lg:col-span-2">
+                <i class="bi bi-calendar3 text-xl text-[#3B3FB6]"></i>
+                <span class="flex min-w-0 flex-1 flex-col">
+                    <span class="text-xs font-semibold text-[#7A7F9A]">Giriş</span>
+                    <input class="w-full bg-transparent text-base font-bold text-[#1B2140] outline-none" name="CheckIn" type="date" value="@Model.CheckIn.ToString("yyyy-MM-dd")" required />
+                </span>
+            </label>
+
+            <label class="flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-colors hover:bg-[#F5F6FA] focus-within:bg-[#F5F6FA] lg:col-span-2">
+                <i class="bi bi-calendar3 text-xl text-[#3B3FB6]"></i>
+                <span class="flex min-w-0 flex-1 flex-col">
+                    <span class="text-xs font-semibold text-[#7A7F9A]">Çıkış</span>
+                    <input class="w-full bg-transparent text-base font-bold text-[#1B2140] outline-none" name="CheckOut" type="date" value="@Model.CheckOut.ToString("yyyy-MM-dd")" required />
+                </span>
+            </label>
+
+            <label class="flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-colors hover:bg-[#F5F6FA] focus-within:bg-[#F5F6FA] lg:col-span-2">
+                <i class="bi bi-cash-coin text-xl text-[#3B3FB6]"></i>
+                <span class="flex min-w-0 flex-1 flex-col">
+                    <span class="text-xs font-semibold text-[#7A7F9A]">Para Birimi</span>
+                    <select class="w-full cursor-pointer bg-transparent text-base font-bold text-[#1B2140] outline-none" name="Currency">
+                        @foreach (var currency in new[] { "EUR", "USD", "TRY", "GBP" })
+                        {
+                            <option value="@currency" selected="@(currency == Model.Currency)">@currency</option>
+                        }
+                    </select>
+                </span>
+            </label>
+
+            <div class="p-1 lg:col-span-2">
+                <button type="submit" data-search-submit
+                        class="flex min-h-16 w-full items-center justify-center gap-2 rounded-2xl bg-[#3B3FB6] text-base font-bold text-white shadow-[0_10px_24px_rgba(59,63,182,0.35)] transition hover:-translate-y-px hover:bg-[#2E3195] disabled:opacity-70">
+                    <i class="bi bi-search"></i>
+                    <span>Otelleri Ara</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-[#E6E8F0] bg-[#FAFBFD] px-6 py-4">
+            <div class="flex items-center justify-between gap-4" data-counter data-min="1" data-max="10">
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-[#1B2140]"><i class="bi bi-person text-[#7A7F9A]"></i> Yetişkin</span>
+                <div class="inline-flex items-center rounded-full bg-white p-[3px] shadow-sm">
+                    <button type="button" class="@counterButton" data-action="minus" aria-label="Yetişkin azalt"><i class="bi bi-dash"></i></button>
+                    <input type="hidden" name="Adults" value="@Model.Adults" />
+                    <span class="w-10 text-center font-extrabold text-[#1B2140]" data-counter-value>@Model.Adults</span>
+                    <button type="button" class="@counterButton" data-action="plus" aria-label="Yetişkin artır"><i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between gap-4" data-counter data-min="0" data-max="6">
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-[#1B2140]"><i class="bi bi-emoji-smile text-[#7A7F9A]"></i> Çocuk</span>
+                <div class="inline-flex items-center rounded-full bg-white p-[3px] shadow-sm">
+                    <button type="button" class="@counterButton" data-action="minus" aria-label="Çocuk azalt"><i class="bi bi-dash"></i></button>
+                    <input type="hidden" name="Children" value="@Model.Children" />
+                    <span class="w-10 text-center font-extrabold text-[#1B2140]" data-counter-value>@Model.Children</span>
+                    <button type="button" class="@counterButton" data-action="plus" aria-label="Çocuk artır"><i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between gap-4" data-counter data-min="1" data-max="5">
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-[#1B2140]"><i class="bi bi-door-closed text-[#7A7F9A]"></i> Oda</span>
+                <div class="inline-flex items-center rounded-full bg-white p-[3px] shadow-sm">
+                    <button type="button" class="@counterButton" data-action="minus" aria-label="Oda azalt"><i class="bi bi-dash"></i></button>
+                    <input type="hidden" name="Rooms" value="@Model.Rooms" />
+                    <span class="w-10 text-center font-extrabold text-[#1B2140]" data-counter-value>@Model.Rooms</span>
+                    <button type="button" class="@counterButton" data-action="plus" aria-label="Oda artır"><i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+
+            @for (var i = 0; i < 6; i++)
+            {
+                var selectedAge = i < Model.ChildAgeList.Count ? Model.ChildAgeList[i] : 8;
+
+                <label class="hidden items-center gap-2 text-sm font-semibold text-[#1B2140]" data-child-age-field>
+                    <i class="bi bi-balloon text-[#7A7F9A]"></i>
+                    @(i + 1). çocuk
+                    <select class="rounded-full bg-white px-4 py-2 text-sm font-bold text-[#1B2140] shadow-sm focus:outline-none" data-child-age>
+                        @for (var age = 0; age <= 17; age++)
+                        {
+                            <option value="@age" selected="@(age == selectedAge)">@age yaş</option>
+                        }
+                    </select>
+                </label>
+            }
+        </div>
+
+        <input type="hidden" name="ChildAges" value="@Model.ChildAges" />
     </form>
 </section>
 
-<section class="mt-12 grid gap-6 md:grid-cols-3">
-    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-700">1</span>
-        <h2 class="mt-4 text-lg font-semibold">Şehri seçin</h2>
-        <p class="mt-2 text-sm text-slate-600">İstanbul veya Milano gibi bir destinasyon yazın.</p>
+<section id="popular" class="mt-20 scroll-mt-24">
+    <div class="mb-10">
+        <h2 class="text-3xl font-extrabold tracking-[-0.02em] text-[#1B2140] sm:text-[2.1rem]">Popüler Destinasyonları Keşfet</h2>
+        <p class="mt-2 text-lg text-[#7A7F9A]">Seyahat severlerin en çok tercih ettiği şehirlerden ilham al.</p>
     </div>
 
-    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-700">2</span>
-        <h2 class="mt-4 text-lg font-semibold">Tarih ve misafirleri girin</h2>
-        <p class="mt-2 text-sm text-slate-600">Giriş ve çıkış tarihini, yetişkin, çocuk ve oda sayısını belirleyin.</p>
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        @foreach (var city in cities)
+        {
+            <a class="group block overflow-hidden rounded-3xl bg-white shadow-[0_10px_30px_rgba(27,33,64,0.08)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(27,33,64,0.12)]"
+               asp-controller="Hotels" asp-action="Search"
+               asp-route-destination="@city.Name"
+               asp-route-checkIn="@Model.CheckIn.ToString("yyyy-MM-dd")"
+               asp-route-checkOut="@Model.CheckOut.ToString("yyyy-MM-dd")"
+               asp-route-adults="@Model.Adults"
+               asp-route-children="0"
+               asp-route-rooms="@Model.Rooms"
+               asp-route-currency="@Model.Currency">
+                <div class="aspect-[4/5] overflow-hidden bg-gradient-to-br from-[#DADDF6] to-[#F5F6FA]">
+                    <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="@city.Image" alt="@city.Alt" loading="lazy" />
+                </div>
+                <div class="flex items-end justify-between gap-2 px-5 pb-5 pt-4">
+                    <div>
+                        <h3 class="text-xl font-extrabold text-[#1B2140]">@city.Name</h3>
+                        <span class="mt-1 inline-flex items-center gap-1 text-sm text-[#7A7F9A]"><i class="bi bi-geo-alt"></i> @city.Country</span>
+                    </div>
+                    <span class="whitespace-nowrap rounded-full bg-[#EEF0FC] px-3 py-1 text-xs font-bold text-[#3B3FB6]">Otelleri gör</span>
+                </div>
+            </a>
+        }
+    </div>
+</section>
+
+<section class="mt-20 rounded-[32px] bg-[#F5F6FA] px-6 py-16 sm:px-12">
+    <div class="mb-10">
+        <h2 class="text-3xl font-extrabold tracking-[-0.02em] text-[#1B2140] sm:text-[2.1rem]">Nasıl bir konaklama arıyorsunuz?</h2>
+        <p class="mt-2 text-lg text-[#7A7F9A]">Seyahat tarzına uygun konaklama türünü seç, aramanı daralt.</p>
     </div>
 
-    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-700">3</span>
-        <h2 class="mt-4 text-lg font-semibold">Fiyatları karşılaştırın</h2>
-        <p class="mt-2 text-sm text-slate-600">Her otelin toplam fiyatını seçtiğiniz para biriminde görün.</p>
+    <div class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-6">
+        @foreach (var type in accommodationTypes)
+        {
+            <div class="flex flex-col items-start gap-1 rounded-2xl bg-white p-6 shadow-sm">
+                <span class="mb-4 flex h-[52px] w-[52px] items-center justify-center rounded-[14px] bg-[#EEF0FC] text-2xl text-[#3B3FB6]">
+                    <i class="bi @type.Icon"></i>
+                </span>
+                <span class="font-extrabold text-[#1B2140]">@type.Name</span>
+                <span class="rounded-full bg-[#F5F6FA] px-2.5 py-0.5 text-xs font-semibold text-[#7A7F9A]">Yakında</span>
+            </div>
+        }
+    </div>
+</section>
+
+<section class="mt-20 text-center">
+    <div class="mb-10">
+        <h2 class="text-3xl font-extrabold tracking-[-0.02em] text-[#1B2140] sm:text-[2.1rem]">Neden SultanateStays?</h2>
+        <p class="mt-2 text-lg text-[#7A7F9A]">Doğru oteli bulmak için ihtiyacın olan her şey tek bir yerde.</p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+        @foreach (var feature in features)
+        {
+            <div class="rounded-3xl bg-white p-10 shadow-[0_10px_30px_rgba(27,33,64,0.08)]">
+                <span class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-[#EEF0FC] text-2xl text-[#3B3FB6]">
+                    <i class="bi @feature.Icon"></i>
+                </span>
+                <h3 class="mb-2 text-xl font-extrabold text-[#1B2140]">@feature.Title</h3>
+                <p class="mx-auto max-w-[28ch] text-[#7A7F9A]">@feature.Text</p>
+            </div>
+        }
     </div>
 </section>
 

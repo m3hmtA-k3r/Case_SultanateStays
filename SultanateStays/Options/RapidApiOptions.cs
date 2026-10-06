@@ -9,7 +9,5 @@
         public string Host { get; set; } = string.Empty;
 
         public string ApiKey { get; set; } = string.Empty;
-
-        public bool UseMock { get; set; }
     }
 }

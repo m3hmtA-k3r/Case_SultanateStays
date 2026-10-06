@@ -22,6 +22,14 @@ namespace SultanateStays.Models
 
         public string Currency { get; set; } = "EUR";
 
+        public string? ChildAges { get; set; }
+
         public int Nights => CheckOut.DayNumber - CheckIn.DayNumber;
+
+        public List<int> ChildAgeList => (ChildAges ?? string.Empty)
+            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Select(a => int.TryParse(a, out var age) ? age : -1)
+            .Take(Children)
+            .ToList();
     }
 }
